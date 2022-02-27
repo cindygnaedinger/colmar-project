@@ -6,6 +6,12 @@
 
 }
 
+body {
+    background-color: #f3f5f5;
+    color: #4a4a4a;
+
+}
+
 /* HEADER */
 
 #header--logo {
@@ -114,7 +120,9 @@ header .mobile {
     }
 }
 */
- 
+
+/*-------------------------------SIGN-UP SECTION-------------------------*/
+
 #sign-up-section {
     display: flex;
     justify-content: flex-start;
@@ -152,7 +160,7 @@ header .mobile {
 
 #sign-up-cta h1 {
     font-size: 2.5rem;
-font-weight: 900;
+    font-weight: 900;
 
 }
 
@@ -179,7 +187,8 @@ font-weight: 900;
     transition-property: background-color;
     transition-duration: 0.75s;
 }
-.button-link{
+
+.button-link {
     text-decoration: none;
     color: white;
 }
@@ -189,12 +198,15 @@ font-weight: 900;
     background-color: aquamarine;
     cursor: pointer;
 }
-.main-section{
+
+/*------------------------------------MAIN SECTION----------------------------------------*/
+.main-section {
     color: #4a4a4a;
-    background: white;
+    background: #f3f5f5;
     width: 90%;
     max-width: 1200px;
-    margin: 1.6rem 24px;
+    height: 600px;
+    margin: 32px 24px;
 
     display: grid;
     gap: 1.6rem;
@@ -202,23 +214,19 @@ font-weight: 900;
 
 }
 
-.main-container{
-  grid-column: span ;  
+.main-container .sidebar {
+    grid-column: span 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-.main-container .sidebar{
-  grid-column: span 1;  
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.sidebar{
+.sidebar {
     border-left: solid 2px rgb(238, 238, 238);
-
 }
-.sidebar-container{
+
+.sidebar-container {
     margin-left: 16px;
     padding-bottom: 16px;
     padding-top: 16px;
@@ -228,51 +236,225 @@ font-weight: 900;
     transition-property: background-color;
     transition-duration: 0.75s;
 }
-.sidebar-container:hover{
-background-color: #c6c1c1;
-cursor: pointer;
+
+.sidebar-container:hover {
+    background-color: #eaebec;
+    cursor: pointer;
 
 }
+
 #img {
     border-radius: 5px;
     vertical-align: text-top;
     margin-left: 20px;
 }
 
-.sidebar-title{
+.sidebar-title {
     float: right;
     line-height: 30px;
     margin-right: 20px;
     margin-top: 30px;
 }
-a{
+
+.sidebar-title p {
+    color: #909194;
+
+}
+
+#read-more {
     text-decoration: none;
     color: rgb(90, 90, 252);
 }
+
 h1 {
     font-size: 2rem;
+
 }
 
-/*
-.courses{
-    background: white;
+.main-text p {
+    line-height: 30px;
+
+
+}
+
+.main-text h1 {
+    margin: 32px 0 24px 0;
+
+}
+
+.main-text h5 {
+    margin: 24px 0 32px 0;
+}
+
+/*--------------------------COURSES--------------------------------*/
+
+.courses {
+    display: grid;
+    row-gap: 32px;
+    padding-left: 72px;
+    grid-template-columns: 1fr 1fr 1fr;
+    position: center;
+
+
+    background-color: #eaebec;
+    color: #4a4a4a;
+    width: 100%;
+    height: 1000px;
+    flex-wrap: wrap;
+    padding-bottom: 72px;
+}
+
+.courses .header {
+    grid-column: 1/4;
+    color: #4a4a4a;
+    background-color: #eaebec;
+    text-align: center;
+    margin: 52px 0 32px 0;
+    font-size: 2rem;
+    padding-right: 70px;
+
+}
+
+.uno-cuatro {
+
+    background-color: white;
+    width: 350px;
+    height: 350px;
+    cursor: pointer;
+    transition-delay: 50ms;
+    transition-property: background-color;
+    transition-duration: 0.75s;
+}
+
+.dos-cinco {
+
+    background-color: white;
+    width: 350px;
+    height: 350px;
+    cursor: pointer;
+    transition-delay: 50ms;
+    transition-property: background-color;
+    transition-duration: 0.75s;
+}
+
+.tres-seis {
+
+    background-color: white;
+    width: 350px;
+    height: 350px;
+    cursor: pointer;
+    transition-delay: 50ms;
+    transition-property: background-color;
+    transition-duration: 0.75s;
+}
+
+.text-courses {
+    margin-left: 20px;
+    margin-top: 16px;
+    line-height: 25px;
+
+}
+
+.text-courses p {
+    font-size: 14px;
+    color: #a39f9f;
+}
+
+.text-courses h3 {
+    font-size: 1rem;
+    margin-bottom: 14px;
+}
+
+.uno-cuatro:hover {
+    background-color: rgb(186, 247, 226);
+}
+
+.dos-cinco:hover {
+    background-color: rgb(186, 247, 226);
+}
+
+.tres-seis:hover {
+    background-color: rgb(186, 247, 226);
+}
+
+/*-------------------------THESIS SECTION------------------------*/
+.thesis-container {
     width: 90%;
     max-width: 1200px;
-    margin: 1.6rem 24px;
-
+    margin: 64px auto;
     display: grid;
-    gap: 1.6rem;
-    grid-template-columns: repeat(5, 1fr);
-}
-.thesis-section{
-    background: white;
-    width: 90%;
-    max-width: 1200px;
-    margin: 1.6rem 24px;
-
-    display: grid;
-    gap: 1.6rem;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: 60% 15% 25%;
+    grid-template-rows: repeat(4, auto);
+    grid-gap: 10px;
 }
 
-*/
+.thesis-container>div,
+.thesis-container .thesis-header,
+.thesis-container .thesis-left,
+.thesis-container .thesis-sidebar,
+.thesis-container .thesis-sidebar-two,
+.thesis-container .footer {
+    padding: 6px;
+    border-radius: 5px;
+
+}
+
+.thesis-container .thesis-header {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    text-align: center;
+}
+
+.thesis-header h1 {
+    height: 100px;
+}
+
+.thesis-container .thesis-left {
+    grid-row: span 2;
+}
+
+.thesis-container footer {
+    grid-column: 1/-1;
+}
+
+.thesis-left {
+    line-height: 30px;
+}
+
+.thesis-sidebar,
+.thesis-sidebar-two {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+    height: 200px;
+    width: 200px;
+
+
+}
+
+.sidebar-text,
+.sidebar-text-two {
+    height: 150px;
+    margin-top: 40px;
+    line-height: 30px;
+
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+}
+
+.footer nav ul {
+    display: flex;
+    list-style: none;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.footer nav a:hover {
+    color: black;
+}
